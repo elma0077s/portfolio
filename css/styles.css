@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+img,
+iframe {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+/* SETTING PRIMARY COLORS */
+:root {
+  --bs-primary: #cf2801;
+  --bs-primary-rgb: 207, 40, 1;
+}
+
+/* CHANGING BUTTON STYLES */
+.btn {
+  --bs-btn-focus-box-shadow: 0 0 0 0.25rem
+    rgba(var(--bs-btn-focus-shadow-rgb), 0.9);
+  --bs-btn-padding-x: 1.85rem;
+  --bs-btn-padding-y: 0.5rem;
+  --bs-btn-font-size: 0.85rem;
+}
+
+article .btn {
+  --bs-btn-padding-x: 2.8rem;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #9c1d00;
+  --bs-btn-hover-border-color: #912f16;
+  --bs-btn-focus-shadow-rgb: 240, 52, 10;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #912f16;
+  --bs-btn-active-border-color: #bd3715;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+/* CHANGING NAV LINK STYLES */
+.nav-link:focus-visible,
+.navbar-brand:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem #dc3545;
+}
+
+.navbar-toggler {
+}
+/* HERO SECTION BACKGROUND */
+.hero {
+  padding: 7rem 0;
+  background: url(../images/home-hero-720_x_360.png) no-repeat center
+    center/cover;
+}
+
+.team-hero {
+  padding: 7rem 0;
+  background: url(../images/team-hero-720_x_405.png) no-repeat center
+    center/cover;
+}
+
+.contact-hero {
+  padding: 7rem 0;
+  background: url(../images/contact-hero-720_x_400.png) no-repeat center 30% /
+    cover;
+}
+
+.bg-city-bg {
+  background: url(../images/blur-bg-720_x_960.jpg) no-repeat center center/cover;
+}
+
+.review img {
+  max-width: 100%;
+  border-radius: 100%;
+}
+
+/* ADDING BLUR TO MY DIVS */
+.bar-blur {
+  background-color: var(--bs-primary);
+  height: 20px;
+  width: 100%;
+  filter: blur(10px);
+  margin: 1rem 0;
+}
+
+.video picture img {
+  filter: blur(2px);
+  aspect-ratio: 16/9;
+}
+
+/* SETTING FONT SIZE OF THE VIDEO PLAY ICON */
+.video i {
+  font-size: 4rem;
+}
+
+article small {
+  font-size: 0.65rem;
+}
+
+/* ADDING PADDING TO MY REVIEWS */
+.reviews {
+  padding: 3rem 2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+.hours {
+  margin: 7rem 0;
+}
+
+/* SKIP LINKS */
+.skip-links a {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  color: var(--bs-primary);
+}
+
+.skip-links a:focus {
+  top: 0;
+  z-index: 100000;
+  background-color: var(--bs-white);
+  padding: 0.5rem;
+}
+
+.skip-links ul {
+  list-style: none;
+  padding: 0;
+  height: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 320px) {
+  .hero {
+    padding: 2rem;
+  }
+
+  .video i {
+    font-size: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding: 7rem 0;
+  }
+
+  .hero {
+    padding: 7rem 0;
+  }
+
+  .video i {
+    font-size: 8rem;
+  }
+}
